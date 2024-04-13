@@ -1,0 +1,8 @@
+cache/
+config/.config/ags/types
+aws/.aws/credentials
+__pycache__/
+mise.toml
+history.txt
+plugin.msgpackz
+history.sqlite*

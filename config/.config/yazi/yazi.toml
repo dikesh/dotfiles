@@ -1,0 +1,18 @@
+[mgr]
+ratio = [3, 3, 4]
+
+[opener]
+edit = [
+	{ run = 'nvim "$@"', block = true},
+]
+play = [
+	{ run = 'mpv "$@"', orphan = true, for = "unix" },
+]
+open-image = [
+  { run = 'feh --start-at "$@"', orphan = true, desc = "feh" },
+]
+
+[open]
+prepend_rules = [
+  { mime = "image/*", use = [ "open-image", "open" ] },
+]

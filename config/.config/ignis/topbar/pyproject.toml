@@ -1,0 +1,16 @@
+[tool.ruff]
+line-length = 99
+lint.ignore = ["E722"]
+lint.select = ["I"]
+
+[tool.uv.sources]
+ignis = { git = "https://github.com/ignis-sh/ignis.git" }
+
+[project]
+name = "topbar"
+version = "0.1.0"
+description = "Topbar with Ignis"
+requires-python = ">=3.13"
+dependencies = [
+    "ignis",
+]
