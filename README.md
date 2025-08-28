@@ -1,11 +1,14 @@
-## Config
+# Config
+
+![Niri Config Demo](niri-config.mp4)
+
   - Compositor: niri
   - Terminal: kitty
   - Shell: nushell
 
 ### Tools / Fonts
 
-* Build / Standalone
+* Build / Manually Install
   - paru
   - mise
   - uv
@@ -42,7 +45,7 @@
   - playerctl
   - postgresql - [Setup](https://gist.github.com/NickMcSweeney/3444ce99209ee9bd9393ae6ab48599d8)
   - ripgrep
-  - rofi-wayland - [Launchers](https://github.com/adi1090x/rofi)
+  - rofi-wayland - [Launchers - Only install fonts with `setup.sh`](https://github.com/adi1090x/rofi)
   - slurp swappy
   - stow
   - swaybg
@@ -55,6 +58,7 @@
   - yazi ffmpegthumbnailer unarchiver
   - zoxide
 * Paru
+  - appflowy-bin
   - awsvpnclient
   - brave-bin
   - bun-bin
