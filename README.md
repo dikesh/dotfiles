@@ -1,6 +1,6 @@
 # Config
 
-![Niri Config Demo](niri-config.mp4)
+<https://github.com/user-attachments/assets/44ed8579-98bb-4c41-8a83-58ada4922a3f>
 
   - Compositor: niri
   - Terminal: kitty
