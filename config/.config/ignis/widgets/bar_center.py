@@ -4,7 +4,9 @@ from datetime import timezone
 from ignis import widgets
 from ignis.utils import Poll
 from ignis.variable import Variable
+from ignis.window_manager import WindowManager
 
+window_manager = WindowManager.get_default()
 # Date time format
 FORMAT = "%H:%M:%S %a %d %b %Y"
 
@@ -32,6 +34,7 @@ def bar_center():
                     ).bind("output")
                 ),
                 on_click=lambda _: toggle_show_utc(),
+                on_right_click=lambda _: window_manager.open_window("ignis_calendar"),
             ),
         ],
     )

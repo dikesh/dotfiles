@@ -3,6 +3,7 @@ from ignis.icon_manager import IconManager
 from ignis.utils import get_n_monitors, sass_compile
 
 from widgets.bar import bar
+from widgets.calendar import calendar
 
 # Add CSS and Icons
 CssManager.get_default().apply_css(
@@ -17,3 +18,6 @@ IconManager.get_default().add_icons("./assets")
 # Init bar for each monitor
 for i in range(get_n_monitors()):
     bar(i)
+
+# Calendar
+calendar()
