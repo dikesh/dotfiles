@@ -103,7 +103,7 @@ layer-rule {
 
 // Add lines like this to spawn processes at startup.
 spawn-at-startup "sh" "-c" "swaybg --image $HOME/Pictures/wallpapers/moon.jpg"
-spawn-at-startup "sh" "-c" "~/.config/ignis/topbar/scripts/launch.sh"
+spawn-at-startup "sh" "-c" "~/.config/ignis/scripts/launch.sh"
 spawn-at-startup "mako"
 spawn-at-startup "sh" "-c" "xwayland-satellite"
 spawn-at-startup "sh" "-c" "ssh-agent -D -a /run/user/1000/ssh-agent.socket"
@@ -141,7 +141,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+X         { spawn "sh" "-c" "pkill ignis || ~/.config/ignis/topbar/scripts/launch.sh"; }
+    Mod+X         { spawn "sh" "-c" "pkill ignis || ~/.config/ignis/scripts/launch.sh"; }
     Mod+L         { spawn "swaylock"; }
     Mod+T         { spawn "kitty"; }
     Mod+E         { spawn "kitty" "-e" "yazi"; }

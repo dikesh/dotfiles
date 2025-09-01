@@ -8,7 +8,6 @@ from widgets.bar_right import bar_right
 def bar(monitor_id: int = 0) -> widgets.Window:
     """Main Bar Widget"""
     return widgets.Window(
-        css_classes=["bar"],
         namespace=f"ignis_bar_{monitor_id}",
         monitor=monitor_id,
         anchor=["left", "top", "right"],

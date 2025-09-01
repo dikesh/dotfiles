@@ -36,61 +36,61 @@ $rosewater: #f4dbd6;
 
 .bar-container {
   margin: 0 8px 4px;
-}
 
-.bar-section {
-  background: $surface0;
-  border-radius: 0px;
-  padding: 8px 12px;
+  .bar-section {
+    background: $surface0;
+    border-radius: 0px;
+    padding: 8px 12px;
 
-  image {
-    -gtk-icon-size: 14px;
-  }
+    image {
+      -gtk-icon-size: 14px;
+    }
 
-  // Padding
-  &.power,
-  &.screenrec,
-  &.apps {
-    padding: 8px 11px;
-    label {
-      padding: 0 3px;
+    // Padding
+    &.power,
+    &.screenrec,
+    &.apps {
+      padding: 8px 11px;
+      label {
+        padding: 0 3px;
+      }
+    }
+
+    &.power {
+      color: $peach;
+    }
+
+    &.battery,
+    &.network,
+    &.volume,
+    &.bluetooth {
+      color: $blue;
+    }
+
+    &.apps,
+    .system-resource-widget {
+      color: $text;
     }
   }
 
-  &.power {
-    color: $peach;
+  .hl-workspace {
+    padding: 0 4px;
+    border-radius: 2px;
   }
 
-  &.battery,
-  &.network,
-  &.volume,
-  &.bluetooth {
-    color: $blue;
+  .hl-workspace-active {
+    padding: 0 8px;
+    background: $sapphire;
+    box-shadow: 3px 3px 2px $crust;
   }
 
-  &.apps,
-  .system-resource-widget {
-    color: $text;
-  }
-}
+  .traymenu modelbutton {
+    background: $mantle;
+    padding: 8px;
 
-.hl-workspace {
-  padding: 0 4px;
-  border-radius: 2px;
-}
-
-.hl-workspace-active {
-  padding: 0 8px;
-  background: $sapphire;
-  box-shadow: 3px 3px 2px $crust;
-}
-
-.traymenu modelbutton {
-  background: $mantle;
-  padding: 8px;
-
-  &:hover {
-    background: $surface0;
+    &:hover {
+      background: $surface0;
+    }
   }
 }
 
