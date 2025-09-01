@@ -6,6 +6,13 @@ environment {
     ELECTRON_OZONE_PLATFORM_HINT "auto"
 }
 
+// Disable the hot corners.
+gestures {
+    hot-corners {
+        off
+    }
+}
+
 // Input device configuration.
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 input {
@@ -134,19 +141,19 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+X { spawn "sh" "-c" "pkill ignis || ~/.config/ignis/topbar/scripts/launch.sh"; }
-    Mod+L { spawn "swaylock"; }
-    Mod+T { spawn "kitty"; }
-    Mod+E { spawn "kitty" "-e" "yazi"; }
-    Mod+Space { spawn "~/.config/rofi/launchers/type-3/launcher.sh"; }
-    Mod+Escape { spawn "~/.config/rofi/powermenu/type-5/powermenu.sh"; }
-    Mod+B { spawn "~/scripts/bluetooth.sh"; }
-    Mod+S { spawn "playerctl" "play-pause"; }
+    Mod+X         { spawn "sh" "-c" "pkill ignis || ~/.config/ignis/topbar/scripts/launch.sh"; }
+    Mod+L         { spawn "swaylock"; }
+    Mod+T         { spawn "kitty"; }
+    Mod+E         { spawn "kitty" "-e" "yazi"; }
+    Mod+Space     { spawn "~/.config/rofi/launchers/type-3/launcher.sh"; }
+    Mod+Escape    { spawn "~/.config/rofi/powermenu/type-5/powermenu.sh"; }
+    Mod+B         { spawn "~/scripts/bluetooth.sh"; }
+    Mod+S         { spawn "playerctl" "play-pause"; }
     Mod+Shift+F12 { spawn "~/scripts/screenrec.nu"; }
-    Shift+Print { spawn "sh" "-c" "wayshot -s \"$(slurp)\" --stdout | swappy -f -"; }
-    Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
-    Alt+Print { screenshot-window; }
+    Shift+Print   { spawn "sh" "-c" "grim -g \"$(slurp)\" - | satty -f -"; }
+    Print         { screenshot; }
+    Ctrl+Print    { screenshot-screen; }
+    Alt+Print     { screenshot-window; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // The allow-when-locked=true property makes them work even when the session is locked.
@@ -158,15 +165,15 @@ binds {
     XF86AudioPrev        allow-when-locked=true { spawn "playerctl" "previous"; }
     XF86AudioNext        allow-when-locked=true { spawn "playerctl" "next"; }
 
-    Mod+Q { close-window; }
-    Mod+O { toggle-overview; }
-    Mod+Left  { focus-column-left; }
-    Mod+Shift+Tab  { focus-column-left; }
-    Mod+Right { focus-column-right; }
-    Mod+Tab { focus-column-right-or-first; }
-    Alt+Tab { focus-column-right-or-first; }
-    Mod+Down  { focus-window-down; }
-    Mod+Up    { focus-window-up; }
+    Mod+Q         { close-window; }
+    Mod+O         { toggle-overview; }
+    Mod+Left      { focus-column-left; }
+    Mod+Shift+Tab { focus-column-left; }
+    Mod+Right     { focus-column-right; }
+    Mod+Tab       { focus-column-right-or-first; }
+    Alt+Tab       { focus-column-right-or-first; }
+    Mod+Down      { focus-window-down; }
+    Mod+Up        { focus-window-up; }
 
     Mod+Ctrl+Left  { move-column-left; }
     Mod+Ctrl+Down  { move-window-down; }
@@ -177,8 +184,8 @@ binds {
     Mod+Ctrl+K     { move-window-up; }
     Mod+Ctrl+L     { move-column-right; }
 
-    Mod+Home { focus-column-first; }
-    Mod+End  { focus-column-last; }
+    Mod+Home      { focus-column-first; }
+    Mod+End       { focus-column-last; }
     Mod+Ctrl+Home { move-column-to-first; }
     Mod+Ctrl+End  { move-column-to-last; }
 
@@ -194,16 +201,14 @@ binds {
 
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }
-    Mod+U              { focus-workspace-down; }
-    Mod+I              { focus-workspace-up; }
     Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
     Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
-    Mod+Ctrl+U         { move-column-to-workspace-down; }
+    Mod+Ctrl+O         { move-column-to-workspace-down; }
     Mod+Ctrl+I         { move-column-to-workspace-up; }
 
     Mod+Shift+Page_Down { move-workspace-down; }
     Mod+Shift+Page_Up   { move-workspace-up; }
-    Mod+Shift+U         { move-workspace-down; }
+    Mod+Shift+O         { move-workspace-down; }
     Mod+Shift+I         { move-workspace-up; }
 
     Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
@@ -243,12 +248,12 @@ binds {
     Mod+Comma  { consume-window-into-column; }
     Mod+Period { expel-window-from-column; }
 
-    Mod+R { switch-preset-column-width; }
-    Mod+Shift+R { reset-window-height; }
-    Mod+F { maximize-column; }
-    Mod+Shift+F { fullscreen-window; }
-    Mod+Ctrl+Shift+F { toggle-windowed-fullscreen; }
-    Mod+C { center-column; }
+    Mod+R             { switch-preset-column-width; }
+    Mod+Shift+R       { reset-window-height; }
+    Mod+F             { maximize-column; }
+    Mod+Shift+F       { fullscreen-window; }
+    Mod+Ctrl+Shift+F  { toggle-windowed-fullscreen; }
+    Mod+C             { center-column; }
 
     // Finer width adjustments.
     Mod+Minus { set-column-width "-10%"; }

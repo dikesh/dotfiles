@@ -25,6 +25,7 @@
   - fzf
   - git
   - gnome-bluetooth-3.0
+  - grim slurp satty
   - gum
   - intel-media-driver
   - kitty
@@ -46,7 +47,6 @@
   - postgresql - [Setup](https://gist.github.com/NickMcSweeney/3444ce99209ee9bd9393ae6ab48599d8)
   - ripgrep
   - rofi-wayland - [Launchers - Only install fonts with `setup.sh`](https://github.com/adi1090x/rofi)
-  - slurp swappy
   - stow
   - swaybg
   - terraform
@@ -55,6 +55,7 @@
   - udisks2
   - unzip
   - wl-clipboard
+  - xwayland-satellite
   - yazi ffmpegthumbnailer unarchiver
   - zoxide
 * Paru
@@ -70,9 +71,7 @@
   - mongodb-bin mongosh-bin
   - slack-desktop
   - swaylock-effects
-  - wayshot
   - wl-screenrec
-  - xwayland-satellite
 
 
 ___
