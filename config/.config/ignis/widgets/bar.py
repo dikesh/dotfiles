@@ -1,5 +1,6 @@
 from ignis import widgets
 
+from constants import NS_IGNIS_BAR
 from widgets.bar_center import bar_center
 from widgets.bar_left import bar_left
 from widgets.bar_right import bar_right
@@ -8,7 +9,7 @@ from widgets.bar_right import bar_right
 def bar(monitor_id: int = 0) -> widgets.Window:
     """Main Bar Widget"""
     return widgets.Window(
-        namespace=f"ignis_bar_{monitor_id}",
+        namespace=f"{NS_IGNIS_BAR}_{monitor_id}",
         monitor=monitor_id,
         anchor=["left", "top", "right"],
         exclusivity="exclusive",

@@ -30,6 +30,7 @@ def --env y [...args] {
 }
 
 # Source completions and themes
+source ~/.niri.nu
 source ~/.zoxide.nu
 source ~/.uv.nu
 source ~/.uvx.nu
@@ -53,7 +54,9 @@ $env.PROMPT_COMMAND = {
   echo $"(ansi blue)($promt_path)(ansi reset)"
 }
 
-$env.PROMPT_INDICATOR = $' (ansi cyan)❯❯❯(ansi reset) '
+$env.PROMPT_INDICATOR_VI_NORMAL = $' (ansi cyan)❯❯❯(ansi reset) '
+$env.PROMPT_INDICATOR_VI_INSERT = $' (ansi cyan)+❯❯(ansi reset) '
+$env.PROMPT_COMMAND_RIGHT = { $"(ansi cyan)(date now | format date '%I:%M:%S %p')(ansi reset)" }
 
 # Keybinding
 $env.config.keybindings ++= [

@@ -145,6 +145,7 @@ def niri_workspaces(monitor_id: int = 0):
                 child=[
                     _niri_window(ws_num, win_num) for win_num in range(1, WS_WINDOWS_MAX_COUNT + 1)
                 ],
+                tooltip_text="Right click to switch to next workspace",
                 on_click=lambda _: _focus_workspace(ws_num),
                 on_right_click=lambda _: _focus_workspace(ws_num + 1),
                 on_scroll_up=lambda _: _cycle_windows(ws_num, True),

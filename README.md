@@ -21,7 +21,7 @@
   - dart-sass
   - docker docker-buildx
   - fd
-  - feh
+  - feh imagemagick
   - fzf
   - git
   - gnome-bluetooth-3.0

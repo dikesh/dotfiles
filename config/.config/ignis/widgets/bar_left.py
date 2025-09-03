@@ -14,6 +14,7 @@ def applications():
     cmd = "~/.config/rofi/launchers/type-3/launcher.sh"
     return widgets.Button(
         css_classes=["bar-section", "apps"],
+        tooltip_text="Open Applications",
         child=widgets.Label(label="󰀻"),
         on_click=lambda _: asyncio.create_task(exec_sh_async(cmd)),
     )

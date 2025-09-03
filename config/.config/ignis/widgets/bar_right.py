@@ -20,7 +20,7 @@ network = NetworkService.get_default()
 
 async def toggle_bluetooth_power():
     """Toggle Bluetooth power on/off"""
-    cmd = f"bluetoothctl power {'off' if bt_service.powered else 'on'}"
+    cmd: str = f"bluetoothctl power {'off' if bt_service.powered else 'on'}"
     await exec_sh_async(cmd)
 
 
@@ -42,6 +42,7 @@ def bluetooth_widget():
 
     return widgets.Button(
         css_classes=["bar-section", "bluetooth"],
+        tooltip_text="Right click to toggle power on/off",
         child=widgets.Box(
             spacing=8,
             child=total_devices.bind(
@@ -80,6 +81,7 @@ def volume_widget():
     """Volume Widget"""
     return widgets.EventBox(
         css_classes=["bar-section", "volume"],
+        tooltip_text="Click to toggle volume mute/unmute",
         child=[
             widgets.Box(
                 spacing=8,
