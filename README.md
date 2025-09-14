@@ -46,7 +46,7 @@
   - playerctl
   - postgresql - [Setup](https://gist.github.com/NickMcSweeney/3444ce99209ee9bd9393ae6ab48599d8)
   - ripgrep
-  - rofi-wayland - [Launchers - Only install fonts with `setup.sh`](https://github.com/adi1090x/rofi)
+  - rofi - [Launchers - Only install fonts with `setup.sh`](https://github.com/adi1090x/rofi)
   - stow
   - swaybg
   - terraform
