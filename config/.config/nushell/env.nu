@@ -1,3 +1,5 @@
+$env.path ++= ["~/.local/bin"]
+
 niri completions nushell | save -f ~/.niri.nu
 zoxide init nushell | save -f ~/.zoxide.nu
 uv generate-shell-completion nushell | save -f ~/.uv.nu

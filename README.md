@@ -9,14 +9,12 @@
 ### Tools / Fonts
 
 * Build / Manually Install
-  - paru
   - mise
   - uv
   - aws-cli-v2
   - Google Sans Code
 * Pacman
   - bat
-  - bluez-utils 
   - btop
   - dart-sass
   - docker docker-buildx
@@ -28,21 +26,20 @@
   - grim slurp satty
   - gum
   - intel-media-driver
+  - iwd
   - kitty
   - lazygit
   - less
   - ly
   - mako
   - mpv mpv-mpris
-  - nautilus
   - neovim
   - niri
-  - noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+  - noto-fonts noto-fonts-emoji noto-fonts-cjk noto-fonts-extra
   - nushell
   - nwg-look
   - pacman-contrib
   - papirus-icon-theme
-  - pipewire-alsa pipewire-audio pipewire-pulse
   - playerctl
   - postgresql - [Setup](https://gist.github.com/NickMcSweeney/3444ce99209ee9bd9393ae6ab48599d8)
   - ripgrep
@@ -52,11 +49,10 @@
   - terraform
   - transmission-cli
   - ttf-hack-nerd
-  - udisks2
-  - unzip
   - wl-clipboard
   - xwayland-satellite
   - yazi ffmpegthumbnailer unarchiver
+  - zip unzip
   - zoxide
 * Paru
   - appflowy-bin
@@ -73,6 +69,17 @@
   - swaylock-effects
   - wl-screenrec
 
+___
+
+
+### Paru Installation
+
+```
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+```
 
 ___
 
