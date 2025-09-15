@@ -46,7 +46,7 @@ def bar_center():
                 spacing=8,
                 tooltip_text="Click to open calendar",
                 child=[
-                    widgets.Icon(image="view-calendar-week"),
+                    widgets.Icon(image="x-office-calendar-symbolic"),
                     widgets.Button(
                         child=widgets.Label(
                             label=Poll(
