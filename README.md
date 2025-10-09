@@ -1,6 +1,6 @@
 # Config
 
-<https://github.com/user-attachments/assets/44ed8579-98bb-4c41-8a83-58ada4922a3f>
+<https://github.com/user-attachments/assets/a8b79aa8-3e4a-491e-9b49-f0f1d881d806>
 
   - Compositor: niri
   - Terminal: kitty
@@ -68,6 +68,9 @@
   - slack-desktop
   - swaylock-effects
   - wl-screenrec
+- UV tools
+  - pynvim
+  - yt-dlp[default,curl-cffi]
 
 ___
 
@@ -112,3 +115,4 @@ ___
   - Enable `ly.service` and restart
   - Clone dotfiles from git and sync using stow
   - Install rest of the packages
+  - Set Icon themes to Papirus Dark using GTK Settings i.e. nwg-look

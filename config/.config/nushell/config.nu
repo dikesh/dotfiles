@@ -12,6 +12,7 @@ $env.SSH_AUTH_SOCK = $"($env.XDG_RUNTIME_DIR)/ssh-agent.socket"
 # Aliases
 alias ll = ls -a -s
 alias lg = lazygit
+alias incognito = nu --no-history
 
 # Custom commands
 def --wrapped vi [...rest] {
@@ -67,7 +68,7 @@ $env.config.keybindings ++= [
     mode: [ vi_normal, vi_insert ]
     event: {
       send: ExecuteHostCommand,
-      cmd: "fd -d 1 -H -t d -E .git -E node_modules -E .venv 
+      cmd: "fd -d 3 -H -t d -E .git -E node_modules -E .venv 
         | fzf --style=full --layout=reverse --query=(commandline)
         | if $in == '' {commandline edit (commandline)} else {commandline edit ''; cd $in}"
     }
