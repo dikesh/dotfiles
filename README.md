@@ -16,6 +16,7 @@
 * Pacman
   - bat
   - btop
+  - cliphist
   - dart-sass
   - docker docker-buildx
   - fd

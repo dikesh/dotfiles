@@ -1,4 +1,7 @@
 [general]
-early-exit = true
-output-filename = "~/Pictures/screenshots/screenshot-%Y%m%d-%H%M%S.png"
+actions-on-escape = ["exit"]
 copy-command = "wl-copy"
+default-hide-toolbars = true
+early-exit = true
+initial-tool = "rectangle"
+output-filename = "~/Pictures/screenshots/screenshot-%Y%m%d-%H%M%S.png"

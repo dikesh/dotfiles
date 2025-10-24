@@ -111,6 +111,7 @@ spawn-at-startup "mako"
 spawn-sh-at-startup "swaybg --image $HOME/Pictures/wallpapers/moon.jpg"
 spawn-sh-at-startup "~/.config/ignis/scripts/launch.sh"
 spawn-sh-at-startup "ssh-agent -D -a /run/user/1000/ssh-agent.socket"
+spawn-sh-at-startup "wl-paste --watch cliphist store"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -158,10 +159,8 @@ binds {
     Mod+B         { spawn "~/scripts/bluetooth.sh"; }
     Mod+S         { spawn-sh "playerctl play-pause"; }
     Mod+Shift+F12 { spawn "~/scripts/screenrec.nu"; }
+    Print         { spawn-sh "grim - | satty -f -"; }
     Shift+Print   { spawn-sh "grim -g \"$(slurp)\" - | satty -f -"; }
-    Print         { screenshot; }
-    Ctrl+Print    { screenshot-screen; }
-    Alt+Print     { screenshot-window; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // The allow-when-locked=true property makes them work even when the session is locked.
