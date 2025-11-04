@@ -8,11 +8,11 @@ $env.config.history = {
   isolation: true
 }
 $env.SSH_AUTH_SOCK = $"($env.XDG_RUNTIME_DIR)/ssh-agent.socket"
+$env.config.completions.algorithm = 'fuzzy'
 
 # Aliases
 alias ll = ls -a -s
 alias lg = lazygit
-alias incognito = nu --no-history
 
 # Custom commands
 def --wrapped vi [...rest] {
@@ -106,5 +106,19 @@ $env.config.keybindings ++= [
         | fzf --style full --layout=reverse --query=(commandline) 
         | if $in == '' {commandline edit (commandline)} else {commandline edit $in}"
     }
+  }
+  {
+    name: list_contents
+    modifier: ALT
+    keycode: Char_l
+    mode: [ vi_normal, vi_insert ]
+    event: { send: ExecuteHostCommand, cmd: "print ''; ls -a -s" }
+  }
+  {
+    name: incognito
+    modifier: ALT
+    keycode: Char_i
+    mode: [ vi_normal, vi_insert ]
+    event: { send: ExecuteHostCommand, cmd: "nu --no-history" }
   }
 ]

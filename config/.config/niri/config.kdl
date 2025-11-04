@@ -159,8 +159,8 @@ binds {
     Mod+B         { spawn "~/scripts/bluetooth.sh"; }
     Mod+S         { spawn-sh "playerctl play-pause"; }
     Mod+Shift+F12 { spawn "~/scripts/screenrec.nu"; }
-    Print         { spawn-sh "grim - | satty -f -"; }
-    Shift+Print   { spawn-sh "grim -g \"$(slurp)\" - | satty -f -"; }
+    Print         { spawn "~/scripts/screenshot.nu" "screen"; }
+    Shift+Print   { spawn "~/scripts/screenshot.nu" "region"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // The allow-when-locked=true property makes them work even when the session is locked.

@@ -12,7 +12,6 @@
   - mise
   - uv
   - aws-cli-v2
-  - Google Sans Code
 * Pacman
   - bat
   - btop
@@ -44,23 +43,23 @@
   - playerctl
   - postgresql - [Setup](https://gist.github.com/NickMcSweeney/3444ce99209ee9bd9393ae6ab48599d8)
   - ripgrep
-  - rofi - [Launchers - Only install fonts with `setup.sh`](https://github.com/adi1090x/rofi)
+  - rofi - [Launchers - Only install fonts excluding jetbrains with `setup.sh`](https://github.com/adi1090x/rofi)
   - stow
   - swaybg
   - terraform
   - transmission-cli
-  - ttf-hack-nerd
+  - ttf-hack-nerd ttf-jetbrains-mono-nerd
   - wl-clipboard
   - xwayland-satellite
   - yazi ffmpegthumbnailer unarchiver
   - zip unzip
   - zoxide
 * Paru
-  - appflowy-bin
   - awsvpnclient
   - brave-bin
   - bun-bin
   - carapace-bin
+  - crush-bin
   - google-chrome
   - google-cloud-cli
   - ignis
@@ -97,7 +96,6 @@ ___
   - Codes + code scripts + .env + test files
   - Terraform states and variables
   - API Testing repo + vars.env files
-  - Appflowy data
   - Scripts
   - Brave bookmarks
   - Shell History
