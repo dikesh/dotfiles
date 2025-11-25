@@ -110,7 +110,6 @@ layer-rule {
 spawn-at-startup "mako"
 spawn-sh-at-startup "swaybg --image $HOME/Pictures/wallpapers/moon.jpg"
 spawn-sh-at-startup "~/.config/ignis/scripts/launch.sh"
-spawn-sh-at-startup "ssh-agent -D -a /run/user/1000/ssh-agent.socket"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.

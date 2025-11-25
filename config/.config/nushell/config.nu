@@ -7,7 +7,6 @@ $env.config.history = {
   sync_on_enter: true
   isolation: true
 }
-$env.SSH_AUTH_SOCK = $"($env.XDG_RUNTIME_DIR)/ssh-agent.socket"
 $env.config.completions.algorithm = 'fuzzy'
 
 # Aliases
@@ -36,7 +35,6 @@ source ~/.zoxide.nu
 source ~/.uv.nu
 source ~/.uvx.nu
 source ./themes/catppuccin_macchiato.nu
-use ($nu.home-path | path join .mise.nu)
 source ~/.cache/carapace/init.nu
 
 # Update prompts

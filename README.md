@@ -9,7 +9,6 @@
 ### Tools / Fonts
 
 * Build / Manually Install
-  - mise
   - uv
   - aws-cli-v2
 * Pacman
@@ -23,6 +22,7 @@
   - fzf
   - git
   - gnome-bluetooth-3.0
+  - gnome-keyring
   - grim slurp satty
   - gum
   - intel-media-driver
@@ -67,6 +67,7 @@
   - mongodb-bin mongosh-bin
   - slack-desktop
   - swaylock-effects
+  - volta-bin
   - wl-screenrec
 - UV tools
   - pynvim
