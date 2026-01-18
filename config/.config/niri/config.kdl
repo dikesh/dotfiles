@@ -177,7 +177,6 @@ binds {
     Mod+Shift+Tab { focus-column-left; }
     Mod+Right     { focus-column-right; }
     Mod+Tab       { focus-column-right-or-first; }
-    Alt+Tab       { focus-column-right-or-first; }
     Mod+Down      { focus-window-down; }
     Mod+Up        { focus-window-up; }
 

@@ -112,7 +112,7 @@ ___
 ### Post Arch Installation Steps
 
   - Install `git`, `stow`, `ly`, `niri`
-  - Enable `ly.service` and restart
+  - Enable `ly.service` and restart -> `sudo systemctl enable ly@tty2.service`
   - Clone dotfiles from git and sync using stow
   - Install rest of the packages
   - Set Icon themes to Papirus Dark using GTK Settings i.e. nwg-look
