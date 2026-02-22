@@ -5,6 +5,7 @@
   - Compositor: niri
   - Terminal: kitty
   - Shell: nushell
+  - Topbar: [Custom app](https://github.com/dikesh/vala-gtk4-topbar) built with Gtk4 and Vala
 
 ### Tools / Fonts
 
@@ -15,13 +16,11 @@
   - bat
   - btop
   - cliphist
-  - dart-sass
   - docker docker-buildx
   - fd
   - feh imagemagick
   - fzf
   - git
-  - gnome-bluetooth-3.0
   - gnome-keyring
   - grim slurp satty
   - gum
@@ -32,7 +31,7 @@
   - less
   - ly
   - mako
-  - mpv mpv-mpris
+  - mpv
   - neovim
   - niri
   - noto-fonts noto-fonts-emoji noto-fonts-cjk noto-fonts-extra
@@ -49,6 +48,7 @@
   - terraform
   - transmission-cli
   - ttf-hack-nerd ttf-jetbrains-mono-nerd
+  - vala gtk4-layer-shell libgee dart-sass
   - wl-clipboard
   - xwayland-satellite
   - yazi ffmpegthumbnailer unarchiver
@@ -62,7 +62,6 @@
   - crush-bin
   - google-chrome
   - google-cloud-cli
-  - ignis
   - localsend-bin
   - mongodb-bin mongosh-bin
   - slack-desktop
