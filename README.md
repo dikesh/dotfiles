@@ -99,6 +99,7 @@ ___
   - Scripts
   - Brave bookmarks
   - Shell History
+  - zoxide database
   - Clipboards
   - Documents
   - Downloads
