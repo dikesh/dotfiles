@@ -48,7 +48,7 @@
   - terraform
   - transmission-cli
   - ttf-hack-nerd ttf-jetbrains-mono-nerd
-  - vala gtk4-layer-shell libgee dart-sass
+  - vala gtk4-layer-shell libgee glib2-devel dart-sass uncrustify
   - wl-clipboard
   - xwayland-satellite
   - yazi ffmpegthumbnailer unarchiver
@@ -66,6 +66,7 @@
   - mongodb-bin mongosh-bin
   - slack-desktop
   - swaylock-effects
+  - udisks2
   - volta-bin
   - wl-screenrec
 - UV tools
