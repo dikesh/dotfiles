@@ -8,5 +8,7 @@ let password = (gum input --password --header "Password:")
 if $username in (nmcli con show | detect columns --guess | where TYPE == "wifi" | get NAME) {
   nmcli connection delete $username
 }
+
 # Connect
+nmcli device wifi rescan
 nmcli device wifi connect $username password $password
