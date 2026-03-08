@@ -22,7 +22,6 @@ input {
     mouse {
         scroll-method "on-button-down"
         scroll-button 274
-        scroll-button-lock
     }
 
     // Next sections include libinput settings.

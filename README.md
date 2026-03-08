@@ -32,7 +32,7 @@
   - ly
   - mako
   - mpv
-  - neovim
+  - neovim tree-sitter-cli
   - niri
   - noto-fonts noto-fonts-emoji noto-fonts-cjk noto-fonts-extra
   - nushell
@@ -72,6 +72,7 @@
 - UV tools
   - pynvim
   - yt-dlp[default,curl-cffi]
+  - deno
 
 ___
 
