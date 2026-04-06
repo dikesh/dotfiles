@@ -31,7 +31,7 @@
   - less
   - ly
   - mako
-  - mpv
+  - mpv mpv-mpris
   - neovim tree-sitter-cli
   - niri
   - noto-fonts noto-fonts-emoji noto-fonts-cjk noto-fonts-extra

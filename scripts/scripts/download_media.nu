@@ -24,5 +24,5 @@ let ext = (
 if $ext == $EXT_M4A {
   yt-dlp -x --audio-format $EXT_M4A --embed-thumbnail --no-playlist $url -o "%(title)s.%(ext)s"
 } else {
-  yt-dlp --merge-output-format $EXT_MP4 --embed-thumbnail --no-playlist $url -o "%(title)s.%(ext)s"
+  yt-dlp -t $EXT_MP4 --no-playlist $url -o "%(title)s.%(ext)s"
 }

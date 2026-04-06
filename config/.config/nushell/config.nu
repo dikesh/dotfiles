@@ -8,6 +8,7 @@ $env.config.history = {
   isolation: true
 }
 $env.config.completions.algorithm = 'fuzzy'
+$env.FZF_DEFAULT_OPTS = "--bind tab:down,shift-tab:up"
 
 # Aliases
 alias ll = ls -a -s
