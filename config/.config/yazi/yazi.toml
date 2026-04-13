@@ -11,8 +11,13 @@ play = [
 open-image = [
   { run = 'feh --start-at "$@"', orphan = true, desc = "feh" },
 ]
+unzip = [
+	{ run = 'unzip "$@"', desc = "Extract with unzip", block = true }
+]
+
 
 [open]
 prepend_rules = [
   { mime = "image/*", use = [ "open-image", "open" ] },
+  { mime = "application/zip", use = "unzip" },
 ]
