@@ -1,0 +1,17 @@
+input {
+  keyboard {
+    numlock
+  }
+
+  mouse {
+    scroll-method "on-button-down"
+    scroll-button 274
+  }
+
+  touchpad {
+    tap
+    natural-scroll
+  }
+
+  focus-follows-mouse max-scroll-amount="0%" 
+}

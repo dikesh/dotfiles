@@ -1,0 +1,12 @@
+animations {
+  slowdown 1.0
+  horizontal-view-movement {
+    curve "cubic-bezier" 0 0.8 0.13 1.03
+  }
+  workspace-switch {
+    curve "cubic-bezier" 0 0.8 0.13 1.03
+  }
+  window-close {
+    curve "ease-out-expo"
+  }
+}

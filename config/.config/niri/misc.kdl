@@ -1,0 +1,19 @@
+overview {
+  workspace-shadow {
+    off
+  }
+}
+
+hotkey-overlay {
+  skip-at-startup
+}
+
+spawn-at-startup "mako"
+spawn-sh-at-startup "swaybg --image $HOME/Pictures/wallpapers/moon.jpg"
+spawn-sh-at-startup "~/apps/vala/topbar/scripts/toggle.sh"
+spawn-sh-at-startup "wl-paste --watch cliphist store"
+
+prefer-no-csd
+
+screenshot-path "~/Pictures/screenshots/screenshot-%Y%m%d-%H%M%S.png"
+
