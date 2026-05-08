@@ -8,6 +8,7 @@ binds {
   Mod+Escape    { spawn "~/.config/rofi/powermenu/type-5/powermenu.sh"; }
   Mod+B         { spawn "~/scripts/bluetooth.sh"; }
   Mod+S         { spawn-sh "playerctl play-pause"; }
+  Mod+P         { spawn "~/apps/kitty-sessions/select.nu"; }
   Mod+Shift+F12 { spawn "~/scripts/screenrec.nu"; }
   Print         { spawn "~/scripts/screenshot.nu" "screen"; }
   Shift+Print   { spawn "~/scripts/screenshot.nu" "region"; }

@@ -4,10 +4,13 @@
 let env_path = pwd | path join scripts/.env
 if ($env_path | path exists) {open $env_path | from toml | load-env}
 
-def main [run_what = "app"] {
+def main [...args: string] {
+  let run_what = if (($args | length) > 0) {$args.0} else {"app"}
+  let script_args = ($args | slice 1..)
+
   match $run_what {
     "app" => { uv run fastapi dev },
-    "test" => { uv run --with fastexcel test.py },
+    "test" => { uv run --with fastexcel test.py ...$script_args },
     "celery" => { uv run celeryrunner.py },
     "cron" => { uv run celery -A celeryapp beat },
     "memray" => { uv run --with memray memray run --live test.py },

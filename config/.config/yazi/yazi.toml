@@ -1,12 +1,12 @@
 [mgr]
-ratio = [3, 3, 4]
+ratio = [2, 3, 5]
 
 [opener]
 edit = [
 	{ run = 'nvim "$@"', block = true},
 ]
 play = [
-	{ run = 'mpv "$@"', orphan = true, for = "unix" },
+	{ run = 'mpv --force-window "$@"', orphan = true, for = "unix" },
 ]
 open-image = [
   { run = 'feh --start-at "$@"', orphan = true, desc = "feh" },
