@@ -8,10 +8,10 @@ binds {
   Mod+Escape    { spawn "~/.config/rofi/powermenu/type-5/powermenu.sh"; }
   Mod+B         { spawn "~/scripts/bluetooth.sh"; }
   Mod+S         { spawn-sh "playerctl play-pause"; }
-  Mod+P         { spawn "~/apps/kitty-sessions/select.nu"; }
-  Mod+Shift+F12 { spawn "~/scripts/screenrec.nu"; }
-  Print         { spawn "~/scripts/screenshot.nu" "screen"; }
-  Shift+Print   { spawn "~/scripts/screenshot.nu" "region"; }
+  Mod+P         { spawn "~/apps/kitty-sessions/select.fish"; }
+  Mod+Shift+F12 { spawn "fish" "-c" "xscreenrec"; }
+  Print         { spawn "fish" "-c" "xscreenshot screen"; }
+  Shift+Print   { spawn "fish" "-c" "xscreenshot region"; }
 
   // Volume binds
   XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "topbarctl volume-up || wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+"; }

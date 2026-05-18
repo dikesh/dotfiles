@@ -248,7 +248,7 @@ show_menu() {
 
         # Human-readable names of devices, one per line
         # If scan is off, will only list paired devices
-        devices=$(bluetoothctl devices | grep Device | cut -d ' ' -f 3-)
+        devices=$(bluetoothctl devices | rg Device | rg -v 'Toad 8' | cut -d ' ' -f 3-)
 
         # Get controller flags
         scan=$(scan_on)

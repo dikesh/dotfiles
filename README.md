@@ -4,7 +4,7 @@
 
   - Compositor: niri
   - Terminal: kitty
-  - Shell: nushell
+  - Shell: fish
   - Topbar: [Custom app](https://github.com/dikesh/vala-gtk4-topbar) built with Gtk4 and Vala
 
 ### Tools / Fonts
@@ -19,6 +19,7 @@
   - docker docker-buildx
   - fd
   - feh imagemagick
+  - fish
   - fzf
   - git
   - gnome-keyring
@@ -35,7 +36,6 @@
   - neovim tree-sitter-cli
   - niri
   - noto-fonts noto-fonts-emoji noto-fonts-cjk noto-fonts-extra
-  - nushell
   - nwg-look
   - pacman-contrib
   - papirus-icon-theme
@@ -58,7 +58,6 @@
   - awsvpnclient
   - brave-bin
   - bun-bin
-  - carapace-bin
   - crush-bin
   - google-chrome
   - google-cloud-cli
@@ -97,7 +96,8 @@ ___
   - Dotfiles
   - Codes + code scripts + .env + test files
   - Terraform states and variables
-  - API Testing repo + vars.env files
+  - API Testing repo + .env files
+  - Niri secretenvs.kdl file
   - Scripts
   - Brave bookmarks
   - Shell History
