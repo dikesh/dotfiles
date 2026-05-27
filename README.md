@@ -10,6 +10,7 @@
 ### Tools / Fonts
 
 * Build / Manually Install
+  - kitty
   - uv
   - aws-cli-v2
 * Pacman
@@ -27,7 +28,6 @@
   - gum
   - intel-media-driver
   - iwd
-  - kitty
   - lazygit
   - less
   - ly
