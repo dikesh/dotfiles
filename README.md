@@ -12,6 +12,7 @@
 * Build / Manually Install
   - kitty
   - uv
+  - omp
   - aws-cli-v2
 * Pacman
   - bat
@@ -32,6 +33,7 @@
   - less
   - ly
   - mako
+  - mise
   - mpv mpv-mpris
   - neovim tree-sitter-cli
   - niri
@@ -66,7 +68,6 @@
   - slack-desktop
   - swaylock-effects
   - udisks2
-  - volta-bin
   - wl-screenrec
 - UV tools
   - pynvim

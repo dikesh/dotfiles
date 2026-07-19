@@ -14,7 +14,7 @@ function download_media
     test $confirm_status -eq 130; and return
 
     if test $confirm_status -eq 0
-        yt-dlp -t mp4 --no-playlist $url -o "%(title)s.%(ext)s"
+        yt-dlp -t mp4 --no-playlist $url --cookies-from-browser chrome+gnomekeyring -o "%(title)s.%(ext)s"
     else
         yt-dlp -x --audio-format m4a --embed-thumbnail --no-playlist $url -o "%(title)s.%(ext)s"
     end
