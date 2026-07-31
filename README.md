@@ -70,9 +70,11 @@
   - udisks2
   - wl-screenrec
 - UV tools
-  - pynvim
-  - yt-dlp[default,curl-cffi]
   - deno
+  - pynvim
+  - pyright
+  - ruff
+  - yt-dlp[default,curl-cffi]
 
 ___
 
