@@ -10,13 +10,13 @@
 ### Tools / Fonts
 
 * Build / Manually Install
-  - kitty
   - uv
   - omp
   - aws-cli-v2
 * Pacman
   - bat
   - btop
+  - bun
   - cliphist
   - docker docker-buildx
   - fd
@@ -29,8 +29,10 @@
   - gum
   - intel-media-driver
   - iwd
+  - kitty
   - lazygit
   - less
+  - libnotify
   - ly
   - mako
   - mise
@@ -50,6 +52,7 @@
   - terraform
   - transmission-cli
   - ttf-hack-nerd ttf-jetbrains-mono-nerd
+  - udisks2
   - vala gtk4-layer-shell libgee glib2-devel dart-sass uncrustify
   - wl-clipboard
   - xwayland-satellite
@@ -59,15 +62,12 @@
 * Paru
   - awsvpnclient
   - brave-bin
-  - bun-bin
-  - crush-bin
   - google-chrome
   - google-cloud-cli
   - localsend-bin
   - mongodb-bin mongosh-bin
   - slack-desktop
   - swaylock-effects
-  - udisks2
   - wl-screenrec
 - UV tools
   - deno
