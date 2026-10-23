@@ -1,21 +1,22 @@
 function download_media
-    # Shell variables
-    set -x GUM_CONFIRM_SELECTED_BACKGROUND "#008080"
-
     # Get URL
-    set -l url (gum input \
-    --header "URL:" \
-    --placeholder "https://www.instagram.com/reel/ABcD_Xyz/?igsh=Xyz_AbCE==")
+    set -l url (rofi -dmenu \
+        -p "URL" \
+        -theme-str 'entry { placeholder: "https://www.instagram.com/reel/ABcD_Xyz/"; }')
+
+    test $status -ne 0; and return
+    test -z "$url"; and return
+
+    # Select video / audio
+    set -l media_type (printf "Video\nAudio" | rofi -dmenu -p "Download" -selected-row 0)
+
     test $status -ne 0; and return
 
     # Download audio / video
-    gum confirm --affirmative Video --negative Audio --default=true "Video / Audio"
-    set -l confirm_status $status
-    test $confirm_status -eq 130; and return
-
-    if test $confirm_status -eq 0
-        yt-dlp -t mp4 --no-playlist $url --cookies-from-browser chrome+gnomekeyring -o "%(title)s.%(ext)s"
-    else
-        yt-dlp -x --audio-format m4a --embed-thumbnail --no-playlist $url -o "%(title)s.%(ext)s"
+    switch $media_type
+        case Video
+            yt-dlp -t mp4 --js-runtimes node --no-playlist --cookies-from-browser chrome+gnomekeyring -o "%(title)s.%(ext)s" $url
+        case Audio
+            yt-dlp -x --js-runtimes node --audio-format m4a --embed-thumbnail --no-playlist -o "%(title)s.%(ext)s" $url
     end
 end

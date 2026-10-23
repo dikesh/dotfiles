@@ -26,7 +26,6 @@
   - git
   - gnome-keyring
   - grim slurp satty
-  - gum
   - intel-media-driver
   - iwd
   - kitty
@@ -70,11 +69,10 @@
   - swaylock-effects
   - wl-screenrec
 - UV tools
-  - deno
   - pynvim
   - pyright
   - ruff
-  - yt-dlp[default,curl-cffi]
+  - yt-dlp[default,curl-cffi,secretstorage]
 
 ___
 
