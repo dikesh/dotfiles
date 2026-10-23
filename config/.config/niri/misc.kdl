@@ -9,6 +9,7 @@ hotkey-overlay {
 }
 
 spawn-at-startup "mako"
+spawn-at-startup "~/apps/vala/battery-notifier/battery-notifier"
 spawn-sh-at-startup "swaybg --image $HOME/Pictures/wallpapers/moon.jpg"
 spawn-sh-at-startup "~/apps/vala/topbar/scripts/toggle.sh"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
