@@ -47,7 +47,6 @@
   - ripgrep
   - rofi - [Launchers - Only install fonts excluding jetbrains with `setup.sh`](https://github.com/adi1090x/rofi)
   - stow
-  - superfile
   - swaybg
   - terraform
   - transmission-cli
@@ -56,6 +55,7 @@
   - vala gtk4-layer-shell libgee glib2-devel dart-sass uncrustify
   - wl-clipboard
   - xwayland-satellite
+  - yazi ffmpegthumbnailer unarchiver
   - zip unzip
   - zoxide
 * Paru
