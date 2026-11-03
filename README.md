@@ -26,8 +26,8 @@
   - git
   - gnome-keyring
   - grim slurp satty
-  - intel-media-driver
-  - iwd
+  - intel-media-driver vulkan-intel
+  - iwd wireless-regdb
   - kitty
   - lazygit
   - less
@@ -44,8 +44,10 @@
   - papirus-icon-theme
   - playerctl
   - postgresql - [Setup](https://gist.github.com/NickMcSweeney/3444ce99209ee9bd9393ae6ab48599d8)
+  - python-gobject
   - ripgrep
   - rofi - [Launchers - Only install fonts excluding jetbrains with `setup.sh`](https://github.com/adi1090x/rofi)
+  - rtkit
   - stow
   - swaybg
   - terraform
