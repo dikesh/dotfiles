@@ -69,10 +69,11 @@
   - mongodb-bin mongosh-bin
   - slack-desktop
   - swaylock-effects
+  - vala-language-server
   - wl-screenrec
 - UV tools
   - pynvim
-  - pyright
+  - rassumfrassum 
   - ruff
   - yt-dlp[default,curl-cffi,secretstorage]
 
