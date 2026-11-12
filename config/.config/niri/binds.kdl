@@ -1,6 +1,6 @@
 binds {
   // Suggested binds for running programs: terminal, app launcher, screen locker.
-  Mod+X         { spawn-sh "~/apps/vala/topbar/scripts/toggle.sh"; }
+  Mod+Shift+X   { spawn-sh "~/apps/vala/topbar/scripts/toggle.sh"; }
   Mod+L         { spawn "swaylock"; }
   Mod+T         { spawn "kitty"; }
   Mod+E         { spawn-sh "kitty -e yazi"; }

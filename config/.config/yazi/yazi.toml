@@ -3,21 +3,20 @@ ratio = [2, 3, 5]
 
 [opener]
 edit = [
-	{ run = 'nvim "$@"', block = true},
+	{ run = '$EDITOR %s', block = true},
 ]
 play = [
-	{ run = 'mpv --force-window "$@"', orphan = true, for = "unix" },
+	{ run = 'mpv --force-window %s', orphan = true, for = "unix" },
 ]
 open-image = [
-  { run = 'feh --start-at "$@"', orphan = true, desc = "feh" },
+  { run = 'feh --start-at %s', orphan = true, desc = "feh" },
 ]
 unzip = [
-	{ run = 'unzip "$@"', desc = "Extract with unzip", block = true }
+	{ run = 'unzip %s', desc = "Extract with unzip", block = true }
 ]
-
 
 [open]
 prepend_rules = [
-  { mime = "image/*", use = [ "open-image", "open" ] },
+  { mime = "image/*", use = [ "open-image"] },
   { mime = "application/zip", use = "unzip" },
 ]
