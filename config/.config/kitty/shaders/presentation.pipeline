@@ -1,0 +1,27 @@
+# Built-in 3D Matrix while idle, across every visible pane in this OS window.
+# The idle threshold is cursor_stop_blinking_after in kitty.conf.
+startgroup
+    animation_start user-idle
+    animation_stop user-activity | user:matrix-off
+    shaders inside-the-matrix
+endgroup
+
+startgroup
+    animation_toggle user:presentation
+    shaders spotlight
+endgroup
+
+# Smooth orange trail during ordinary cursor movement.
+startgroup
+    animation_start cursor-trail-move
+    animation_stop cursor-trail-stop
+    shaders cursor-trail-motion-blur
+endgroup
+
+# Default lightning only on Kitty tab/pane switches. A subsequent move or input
+# stops it; a simultaneous context-switch start takes precedence.
+startgroup
+    animation_start tab-change | window-focus-in
+    animation_stop 140 | cursor-trail-move | cursor-trail-stop | user-activity | os-window-focus-out
+    shaders cursor-trail-lightning
+endgroup
