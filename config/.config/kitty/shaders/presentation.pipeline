@@ -1,14 +1,3 @@
-# Built-in 3D Matrix while idle, across every visible pane in this OS window.
-# The idle threshold is cursor_stop_blinking_after in kitty.conf.
-startgroup
-    animation_start user-idle
-    animation_stop user-activity | user:matrix-off
-    # Fewer ray-traversal steps reduce GPU work at the cost of distant detail.
-    # Camera motion and cursor-effect refresh rates are unchanged (default: 40).
-    var int ITERATIONS 32
-    shaders inside-the-matrix
-endgroup
-
 startgroup
     animation_toggle user:presentation
     shaders spotlight
