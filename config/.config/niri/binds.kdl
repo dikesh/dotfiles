@@ -4,12 +4,12 @@ binds {
   Mod+L         { spawn "swaylock"; }
   Mod+T         { spawn "kitty"; }
   Mod+E         { spawn-sh "kitty -e yazi"; }
-  Mod+Space     { spawn "~/.config/rofi/launchers/type-3/launcher.sh"; }
-  Mod+Escape    { spawn "~/.config/rofi/powermenu/type-5/powermenu.sh"; }
+  Mod+Space     { spawn "~/.config/rofi/launcher.sh"; }
+  Mod+Escape    { spawn "~/.config/rofi/powermenu.sh"; }
   Mod+B         { spawn "~/scripts/bluetooth.sh"; }
   Mod+V         { spawn "~/scripts/clipboard.sh"; }
   Mod+S         { spawn-sh "playerctl play-pause"; }
-  Mod+P         { spawn "~/apps/kitty-sessions/select.fish"; }
+  Mod+P         { spawn "~/scripts/kitty-sessions.fish"; }
   Mod+Shift+F12 { spawn "fish" "-c" "xscreenrec"; }
   Print         { spawn "fish" "-c" "xscreenshot screen"; }
   Shift+Print   { spawn "fish" "-c" "xscreenshot region"; }

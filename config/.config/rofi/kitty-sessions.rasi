@@ -1,0 +1,209 @@
+/**
+ * Kitty Sessions — Catppuccin Mocha Split-Pane Theme
+ */
+
+configuration {
+    show-icons:                  false;
+}
+
+* {
+    font:                        "JetBrainsMono Nerd Font Propo 11";
+
+    base:                        #1e1e2e;
+    base-translucent:            #1e1e2ef2;
+    mantle:                      #181825;
+    crust-glass:                 #11111bcc;
+    surface0:                    #313244;
+    surface1:                    #45475a;
+    overlay0:                    #6c7086;
+    text:                        #cdd6f4;
+    mauve:                       #cba6f7;
+    mauve-border:                #cba6f766;
+    blue:                        #89b4fa;
+
+    background-color:            transparent;
+    text-color:                  @text;
+}
+
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       860px;
+
+    padding:                     0px;
+    border:                      2px solid;
+    border-radius:               16px;
+    border-color:                @surface1;
+    background-color:            @base-translucent;
+    cursor:                      "default";
+}
+
+mainbox {
+    enabled:                     true;
+    orientation:                 horizontal;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     0px;
+    background-color:            transparent;
+    children:                    [ "imagebox", "listbox" ];
+}
+
+/*****----- Left Hero Panel -----*****/
+imagebox {
+    width:                       260px;
+    expand:                      false;
+    orientation:                 vertical;
+    spacing:                     12px;
+    padding:                     22px;
+    background-color:            @mantle;
+    background-image:            url("~/Pictures/wallpapers/moon.jpg", height);
+    children:                    [ "textbox-title", "dummy", "message" ];
+}
+
+textbox-title {
+    enabled:                     true;
+    expand:                      false;
+    str:                         "󰄛  Kitty Sessions";
+    font:                        "JetBrainsMono Nerd Font Propo Bold 12";
+    padding:                     12px 14px;
+    border:                      1px solid;
+    border-radius:               12px;
+    border-color:                @mauve-border;
+    background-color:            @crust-glass;
+    text-color:                  @mauve;
+    horizontal-align:            0.5;
+}
+
+dummy {
+    expand:                      true;
+    background-color:            transparent;
+}
+
+message {
+    enabled:                     true;
+    expand:                      false;
+    margin:                      0px;
+    padding:                     12px 14px;
+    border:                      1px solid;
+    border-radius:               12px;
+    border-color:                @surface1;
+    background-color:            @crust-glass;
+    text-color:                  @text;
+}
+
+textbox {
+    font:                        "JetBrainsMono Nerd Font Propo 10";
+    background-color:            transparent;
+    text-color:                  @text;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    markup:                      true;
+}
+
+/*****----- Right Interactive Panel -----*****/
+listbox {
+    expand:                      true;
+    orientation:                 vertical;
+    spacing:                     14px;
+    padding:                     20px;
+    background-color:            @base;
+    children:                    [ "inputbar", "listview" ];
+}
+
+inputbar {
+    enabled:                     true;
+    spacing:                     12px;
+    padding:                     12px 16px;
+    border:                      1px solid;
+    border-radius:               12px;
+    border-color:                @surface1;
+    background-color:            @surface0;
+    text-color:                  @text;
+    children:                    [ "textbox-search-icon", "entry" ];
+}
+
+textbox-search-icon {
+    enabled:                     true;
+    expand:                      false;
+    str:                         "";
+    font:                        "JetBrainsMono Nerd Font Propo 12";
+    background-color:            transparent;
+    text-color:                  @mauve;
+    vertical-align:              0.5;
+}
+
+entry {
+    enabled:                     true;
+    background-color:            transparent;
+    text-color:                  @text;
+    cursor:                      text;
+    placeholder:                 "Jump to project...";
+    placeholder-color:           @overlay0;
+    vertical-align:              0.5;
+}
+
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       7;
+    cycle:                       true;
+    dynamic:                     false;
+    scrollbar:                   true;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+
+    spacing:                     6px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px;
+    background-color:            transparent;
+    cursor:                      "default";
+}
+
+scrollbar {
+    width:                       4px;
+    border:                      0px;
+    handle-width:                4px;
+    handle-color:                @mauve;
+    border-radius:               4px;
+    background-color:            @mantle;
+    margin:                      0px 0px 0px 8px;
+}
+
+element {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     8px 14px;
+    border:                      0px 0px 0px 3px;
+    border-radius:               10px;
+    border-color:                transparent;
+    background-color:            #18182599;
+    text-color:                  @text;
+    cursor:                      pointer;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color:            #18182599;
+    text-color:                  @text;
+}
+
+element selected.normal {
+    background-color:            @surface0;
+    border-color:                @mauve;
+    text-color:                  @text;
+}
+
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    highlight:                   bold #cba6f7;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
