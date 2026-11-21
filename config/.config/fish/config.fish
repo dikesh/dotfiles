@@ -3,7 +3,7 @@ if status is-interactive
     set -gx FZF_DEFAULT_OPTS "--bind tab:down,shift-tab:up"
 
     # Aliases
-    alias ll "ls -lah"
+    alias ll "ls -lAh --group-directories-first"
     alias lg lazygit
     alias pwgen "openssl rand -base64 24"
 

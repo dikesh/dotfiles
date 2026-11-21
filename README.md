@@ -22,6 +22,7 @@
   - fd
   - feh imagemagick
   - fish
+  - foot
   - fzf
   - git
   - gnome-keyring

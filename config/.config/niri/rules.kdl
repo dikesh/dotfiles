@@ -5,6 +5,14 @@ window-rule {
     open-maximized true
 }
 
+window-rule {
+    match app-id="^cliphist-picker$"
+    open-floating true
+    open-maximized false
+    default-column-width { fixed 1000; }
+    default-window-height { fixed 720; }
+}
+
 layer-rule {
     match namespace="^wallpaper$"
     place-within-backdrop true

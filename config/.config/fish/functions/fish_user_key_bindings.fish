@@ -70,7 +70,7 @@ end
 
 function _list_contents
     echo
-    ls -lah
+    ls -lAh --group-directories-first
     commandline -f repaint
 end
 
