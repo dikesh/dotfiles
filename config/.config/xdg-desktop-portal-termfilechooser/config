@@ -1,0 +1,6 @@
+[filechooser]
+cmd=yazi-wrapper.sh
+default_dir=$HOME
+env=TERMCMD=foot -a yazi-picker -T Yazi
+open_mode=default
+save_mode=last

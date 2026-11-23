@@ -71,6 +71,7 @@
   - slack-desktop
   - swaylock-effects
   - wl-screenrec
+  - xdg-desktop-portal-termfilechooser-hunkyburrito-git
 - UV tools
   - pynvim
   - ruff

@@ -3,7 +3,7 @@ binds {
   Mod+Shift+X   { spawn-sh "~/apps/vala/topbar/scripts/toggle.sh"; }
   Mod+L         { spawn "swaylock"; }
   Mod+T         { spawn "kitty"; }
-  Mod+E         { spawn-sh "kitty -e yazi"; }
+  Mod+E         { spawn "foot" "-a" "yazi-picker" "-T" "Yazi" "yazi"; }
   Mod+Space     { spawn "~/.config/rofi/launcher.sh"; }
   Mod+Escape    { spawn "~/.config/rofi/powermenu.sh"; }
   Mod+B         { spawn "~/scripts/bluetooth.sh"; }
