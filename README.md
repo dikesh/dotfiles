@@ -26,6 +26,7 @@
   - fzf
   - git
   - gnome-keyring
+  - google-cloud-cli
   - grim slurp satty
   - intel-media-driver vulkan-intel
   - iwd wireless-regdb
@@ -65,13 +66,11 @@
   - awsvpnclient
   - brave-bin
   - google-chrome
-  - google-cloud-cli
   - localsend-bin
   - mongodb-bin mongosh-bin
   - slack-desktop
   - swaylock-effects
   - wl-screenrec
-  - xdg-desktop-portal-termfilechooser-hunkyburrito-git
 - UV tools
   - pynvim
   - ruff

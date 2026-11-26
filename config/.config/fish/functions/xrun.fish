@@ -10,10 +10,12 @@ function xrun
             uv run uvicorn server:app --host 0.0.0.0 --port 8000 --reload
         case test
             uv run test.py $argv[2..]
+        case pytest
+            uv run pytest $argv[2..]
         case ipython
             uv run --with jupyter --with fastexcel --with xlsxwriter ipython
         case '*'
-            echo "Argument must be "(set_color cyan)"api, mcp, test"(set_color normal)" or " \
-                (set_color cyan)"ipython"(set_color normal)
+            echo "Argument must be "(set_color cyan)"api, mcp, test, pytest" \
+                (set_color normal)" or " (set_color cyan)"ipython"(set_color normal)
     end
 end
